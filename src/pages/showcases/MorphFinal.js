@@ -3,7 +3,6 @@ import { useEffect, useState, useRef } from "react"
 import chroma from "chroma-js"
 import { ChromePicker } from "react-color";
 import ClickAwayListener from "react-click-away-listener";
-import {isMobile} from 'react-device-detect';
 import { Box, Slider, Typography } from "@mui/material";
 import { display } from "@mui/system";
 
