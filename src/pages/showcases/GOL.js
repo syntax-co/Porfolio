@@ -3,7 +3,6 @@ import React, { useEffect, useState,useRef} from "react";
 import { IconContext } from "react-icons";
 import { MdDraw,MdPlayCircleOutline,MdOutlineStopCircle,MdOutlineLayersClear } from 'react-icons/md';
 import { ChromePicker } from "react-color";
-import { isMobile } from "react-device-detect";
 import { Squash as Hamburger } from "hamburger-react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
