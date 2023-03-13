@@ -1,0 +1,114 @@
+@import './fonts.css';
+
+
+.nav-title {
+	height: 100%;
+	width:50%;
+	color:var(--primary);
+	font-size: 2.5em;
+	font-family: pt-sans;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media  screen and (min-width: 500px) {
+	.nav-body {
+		width:100%;
+		height:8vh;
+		
+		display: flex;
+		justify-content: center;
+	}
+
+	.nav-inner {
+		width:100%;
+		height:100%;
+		display: flex;
+	}
+
+	.nav-left {
+		width:50%;
+		height:100%;
+	}
+
+	
+
+	
+
+	.nav-item-body {
+		height:100%;
+		display: flex;
+		align-items: center;
+		margin-left: 3%;
+		margin-right: 3%;
+		color:var(--primary);
+		/* color:rgba(0,0,0,0);
+		background-image: linear-gradient(#a0e9ff,#a162e8, #f093b0);
+		-webkit-background-clip:text; */
+		font-size:1.2rem;
+		/* background-color: blue; */
+
+	}
+
+
+	.nav-item-body:hover {
+		cursor:pointer;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+	.nav-title {
+		width:70%;
+		height:10%;
+	}
+	
+	.nav-left {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction:column;
+	}
+	
+	.nav-right {
+		width:0%;
+		height:100%;
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

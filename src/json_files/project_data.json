@@ -1,0 +1,16 @@
+{
+ 
+    "ccc":{
+        "title":"Cutthroat Country Club",
+        "imagepath":"./images/ccc-site.png"
+    },
+    "wsb":{
+        "title":"Wild Sports Bets",
+        "imagepath":"./images/wsb-site.png"
+    },
+    "portfolio":{
+        "title":"Portfolio",
+        "imagepath":"./images/portfolio-site.png"
+    }
+
+}
