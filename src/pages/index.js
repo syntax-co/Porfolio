@@ -1,6 +1,5 @@
 import { Box, Button, Typography } from "@mui/material";
 import { textAlign } from "@mui/system";
-import ParticleBackground from "./components/particleBackground";
 import { motion, useScroll } from "framer-motion";
 import { Pace, Pause, useWindup, WindupChildren } from "windups";
 import { useEffect, useState } from "react";
