@@ -1,0 +1,14 @@
+{
+    "fractal":{
+        "title":"Fractal",
+        "path":"showcases/Fractal"
+    },
+    "gol":{
+        "title":"Game of Life",
+        "path":"showcases/GOL"
+    },
+    "neumorphism":{
+        "title":"Neurmorphism",
+        "path":"showcases/MorphFinal"
+    }
+}
