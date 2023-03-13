@@ -1,7 +1,6 @@
 import {useEffect,useState,useRef} from 'react';
 import { Box } from '@mui/material';
 import {motion} from 'framer-motion';
-import {isMobile} from 'react-device-detect';
 import { Fade as Hamburger } from 'hamburger-react';
 import { useRouter } from 'next/router';
 
