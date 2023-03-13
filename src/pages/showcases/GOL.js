@@ -64,10 +64,10 @@ const setNewColor = (newcolor) => {
     // ██████╔╝╚██████╔╝██║  ██║██║  ██║██████╔╝
     // ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ 
                                              
-    const Board = ({isOpen, setOpen}) => {
+    const Board = ({isOpen, setOpen,smallScreen}) => {
         var canvasXSize;
         var canvasYSize;
-        const gridSize = isMobile? 40:100;
+        const gridSize = smallScreen? 40:100;
         var boxSize;
         
         
@@ -423,7 +423,7 @@ const setNewColor = (newcolor) => {
             const canvasHolder = document.querySelector('#canvas-div');
             const holderDetails = canvasHolder.getBoundingClientRect();
             
-            if (isMobile) {
+            if (smallScreen) {
                 canvasHolder.addEventListener('touchmove',dragHandle);
             } else {
                 canvasHolder.addEventListener('mousemove',dragHandle);
@@ -456,8 +456,8 @@ const setNewColor = (newcolor) => {
                     width:'100%',
                     display:'flex',
                     position:'relative',
-                    alignItems:!isMobile && 'center',
-                    justifyContent:!isMobile &&'center',
+                    alignItems:!smallScreen && 'center',
+                    justifyContent:!smallScreen &&'center',
                     backgroundColor:'primary.lighter',
                     borderBottomLeftRadius:'10px',
                     borderTopRightRadius:'10px',
@@ -505,7 +505,7 @@ const setNewColor = (newcolor) => {
 
 
 
-    const MobileNav = ({isOpen, setOpen}) => {
+    const MobileNav = ({smallScreen}) => {
         
         const [isPlaying,setPlaying] = useState(false);
         const [dragging, setDragging] = useState(false);
@@ -613,7 +613,32 @@ const setNewColor = (newcolor) => {
 
     const GameOfLife = () => {
         const [isOpen,setOpen] = useState(false);
-        
+        const [smallScreen, setSmallScreen] = useState(false);
+        const minWidth = 1000;
+    
+        const handleResize = () => {
+            if (window.innerWidth <= minWidth) {
+                setSmallScreen(true);
+    
+            } else {
+                setSmallScreen(false);
+            }
+        }
+    
+    
+        useEffect(() => {
+            handleResize();
+            window.addEventListener('resize', handleResize);
+            
+            
+    
+            return () => {
+                
+                window.removeEventListener('resize', handleResize);
+                
+    
+            }
+        },[])
         
 
 
@@ -638,12 +663,12 @@ const setNewColor = (newcolor) => {
                 alignItems:'center'
             }}>
                 <MobileNav
-                    isOpen={isOpen}
-                    setOpen={setOpen}
+                    smallScreen={smallScreen}
                 />
                 <Board
                     isOpen={isOpen}
                     setOpen={setOpen}
+                    smallScreen={smallScreen}
                 />
             </Box>
             
