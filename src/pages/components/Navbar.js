@@ -267,8 +267,7 @@ const Navbar = () => {
 		setCurrentPage(router.pathname);
 		window.addEventListener('resize', checkMobile);
 		
-		console.log(process.env.NEXT_PUBLIC_BASE)
-
+		
 		return () => {
 
 			window.removeEventListener('resize',checkMobile) 
