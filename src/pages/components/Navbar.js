@@ -1,7 +1,6 @@
 import {useEffect,useState,useRef} from 'react';
 import { Box } from '@mui/material';
 import {motion} from 'framer-motion';
-import {isMobile} from 'react-device-detect';
 import { Fade as Hamburger } from 'hamburger-react';
 import { useRouter } from 'next/router';
 
@@ -84,10 +83,10 @@ const BrowserNav = ({currentPage}) => {
 
 	return(
 		<div style={{display:'flex',width:'70%',height:'100%',marginRight:'5%'}}>
-			<NavItem text='Home' page='/' currentPage={currentPage} />
-			<NavItem text='Showcase' page='/showcase' currentPage={currentPage} />
-			<NavItem text='Projects' page='/projects' currentPage={currentPage} />
-			<NavItem text='Contact' page='/#contact-section' currentPage={currentPage} />
+			<NavItem text='Home' page={process.env.NEXT_PUBLIC_BASE} currentPage={currentPage} />
+			<NavItem text='Showcase' page={`${process.env.NEXT_PUBLIC_BASE}/showcase`} currentPage={currentPage} />
+			<NavItem text='Projects' page={`${process.env.NEXT_PUBLIC_BASE}/projects`} currentPage={currentPage} />
+			<NavItem text='Contact' page={`${process.env.NEXT_PUBLIC_BASE}/#contact-section`} currentPage={currentPage} />
 		</div>
 	)
 }
@@ -191,10 +190,10 @@ const MobileMenu = ({setOpen}) => {
 			}}>
 
 
-				<MobileItem text='Home' page='/'  setOpen={setOpen} />
-				<MobileItem text='Showcase' page='/showcase'  setOpen={setOpen} />
-				<MobileItem text='Projects' page='/projects'  setOpen={setOpen} />
-				<MobileItem text='Contact' page='/#contact-section'  setOpen={setOpen} />
+				<MobileItem text='Home' page={process.env.NEXT_PUBLIC_BASE}  setOpen={setOpen} />
+				<MobileItem text='Showcase' page={`${process.env.NEXT_PUBLIC_BASE}/showcase`}   setOpen={setOpen} />
+				<MobileItem text='Projects' page={`${process.env.NEXT_PUBLIC_BASE}/projects`}   setOpen={setOpen} />
+				<MobileItem text='Contact' page={`${process.env.NEXT_PUBLIC_BASE}/#contact-section`}  setOpen={setOpen} />
 
 
 				<Box sx={{
@@ -234,14 +233,19 @@ const Navbar = () => {
 	const [currentPage, setCurrentPage] = useState('/');
 	const router = useRouter();
 	const [isOpen, setOpen] = useState(false);
+	const minWidth = 1000;
 
 	const checkMobile = () => {
-		if(isMobile) {
+	
+		if (window.innerWidth <= minWidth) {
 			setShowMobile(true);
-		} 
+
+		} else {
+			setShowMobile(false);
+		}
 		
 		
-		if (window.innerWidth < 600) {
+		if (window.innerWidth <= minWidth) {
 			if (!navMobile.current) {
 				setShowMobile(true);
 				navMobile.current=true;
@@ -264,7 +268,6 @@ const Navbar = () => {
 		window.addEventListener('resize', checkMobile);
 		
 		
-
 		return () => {
 
 			window.removeEventListener('resize',checkMobile) 
@@ -304,7 +307,7 @@ const Navbar = () => {
 						marginLeft:'15%',
 						cursor:'pointer'
 						}}>
-						<a href='/' >
+						<a href={process.env.NEXT_PUBLIC_BASE} >
 						ChrisMunoz
 					</a>
 				</div>
