@@ -308,7 +308,7 @@ const Navbar = () => {
 						marginLeft:'15%',
 						cursor:'pointer'
 						}}>
-						<a href='/' >
+						<a href={process.env.NEXT_PUBLIC_BASE} >
 						ChrisMunoz
 					</a>
 				</div>
