@@ -86,7 +86,7 @@ const BrowserNav = ({currentPage}) => {
 			<NavItem text='Home' page='/Portfolio' currentPage={currentPage} />
 			<NavItem text='Showcase' page='showcase' currentPage={currentPage} />
 			<NavItem text='Projects' page='projects' currentPage={currentPage} />
-			<NavItem text='Contact' page='#contact-section' currentPage={currentPage} />
+			<NavItem text='Contact' page='/Portfolio/#contact-section' currentPage={currentPage} />
 		</div>
 	)
 }
@@ -190,7 +190,7 @@ const MobileMenu = ({setOpen}) => {
 			}}>
 
 
-				<MobileItem text='Home' page='/'  setOpen={setOpen} />
+				<MobileItem text='Home' page='/Portfolio'  setOpen={setOpen} />
 				<MobileItem text='Showcase' page='showcase'  setOpen={setOpen} />
 				<MobileItem text='Projects' page='projects'  setOpen={setOpen} />
 				<MobileItem text='Contact' page='#contact-section'  setOpen={setOpen} />
