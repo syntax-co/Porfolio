@@ -84,9 +84,9 @@ const BrowserNav = ({currentPage}) => {
 	return(
 		<div style={{display:'flex',width:'70%',height:'100%',marginRight:'5%'}}>
 			<NavItem text='Home' page='/' currentPage={currentPage} />
-			<NavItem text='Showcase' page='Portfolio/showcase' currentPage={currentPage} />
-			<NavItem text='Projects' page='Portfolio/projects' currentPage={currentPage} />
-			<NavItem text='Contact' page='Portfolio/#contact-section' currentPage={currentPage} />
+			<NavItem text='Showcase' page='showcase' currentPage={currentPage} />
+			<NavItem text='Projects' page='projects' currentPage={currentPage} />
+			<NavItem text='Contact' page='#contact-section' currentPage={currentPage} />
 		</div>
 	)
 }
