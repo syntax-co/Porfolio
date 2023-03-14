@@ -2,15 +2,23 @@
  
     "ccc":{
         "title":"Cutthroat Country Club",
-        "imagepath":"./images/ccc-site.png"
+        "imagepath":"./images/ccc-site.png",
+        "sitepath":"https://www.cutthroatcountryclub.com/"
     },
     "wsb":{
         "title":"Wild Sports Bets",
-        "imagepath":"./images/wsb-site.png"
+        "imagepath":"./images/wsb-site.png",
+        "sitepath":"https://www.wildsportsbets.com/"
     },
     "portfolio":{
         "title":"Portfolio",
-        "imagepath":"./images/portfolio-site.PNG"
+        "imagepath":"./images/portfolio-site.png",
+        "sitepath":"https://munozchris.com/"
+    },
+    "signin-1":{
+        "title":"Signin/Registeration",
+        "imagepath":"./images/signin-example-1.png",
+        "sitepath":"https://syntax-co.github.io/signin_1/"
     }
 
 }
