@@ -233,14 +233,19 @@ const Navbar = () => {
 	const [currentPage, setCurrentPage] = useState('/');
 	const router = useRouter();
 	const [isOpen, setOpen] = useState(false);
+	const minWidth = 1000;
 
 	const checkMobile = () => {
-		if(isMobile) {
+	
+		if (window.innerWidth <= minWidth) {
 			setShowMobile(true);
-		} 
+
+		} else {
+			setShowMobile(false);
+		}
 		
 		
-		if (window.innerWidth < 600) {
+		if (window.innerWidth <= minWidth) {
 			if (!navMobile.current) {
 				setShowMobile(true);
 				navMobile.current=true;
