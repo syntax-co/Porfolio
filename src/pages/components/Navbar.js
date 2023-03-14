@@ -191,9 +191,9 @@ const MobileMenu = ({setOpen}) => {
 
 
 				<MobileItem text='Home' page='/'  setOpen={setOpen} />
-				<MobileItem text='Showcase' page='/showcase'  setOpen={setOpen} />
-				<MobileItem text='Projects' page='/projects'  setOpen={setOpen} />
-				<MobileItem text='Contact' page='/#contact-section'  setOpen={setOpen} />
+				<MobileItem text='Showcase' page='showcase'  setOpen={setOpen} />
+				<MobileItem text='Projects' page='projects'  setOpen={setOpen} />
+				<MobileItem text='Contact' page='#contact-section'  setOpen={setOpen} />
 
 
 				<Box sx={{
