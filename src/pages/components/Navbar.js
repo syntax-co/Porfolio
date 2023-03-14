@@ -84,9 +84,9 @@ const BrowserNav = ({currentPage}) => {
 	return(
 		<div style={{display:'flex',width:'70%',height:'100%',marginRight:'5%'}}>
 			<NavItem text='Home' page={process.env.NEXT_PUBLIC_BASE} currentPage={currentPage} />
-			<NavItem text='Showcase' page={`${process.env.NEXT_PUBLIC_BASE}/showcase`} currentPage={currentPage} />
-			<NavItem text='Projects' page={`${process.env.NEXT_PUBLIC_BASE}/projects`} currentPage={currentPage} />
-			<NavItem text='Contact' page={`${process.env.NEXT_PUBLIC_BASE}/#contact-section`} currentPage={currentPage} />
+			<NavItem text='Showcase' page={`${process.env.NEXT_PUBLIC_BASE}showcase`} currentPage={currentPage} />
+			<NavItem text='Projects' page={`${process.env.NEXT_PUBLIC_BASE}projects`} currentPage={currentPage} />
+			<NavItem text='Contact' page={`${process.env.NEXT_PUBLIC_BASE}#contact-section`} currentPage={currentPage} />
 		</div>
 	)
 }
@@ -191,9 +191,9 @@ const MobileMenu = ({setOpen}) => {
 
 
 				<MobileItem text='Home' page={process.env.NEXT_PUBLIC_BASE}  setOpen={setOpen} />
-				<MobileItem text='Showcase' page={`${process.env.NEXT_PUBLIC_BASE}/showcase`}   setOpen={setOpen} />
-				<MobileItem text='Projects' page={`${process.env.NEXT_PUBLIC_BASE}/projects`}   setOpen={setOpen} />
-				<MobileItem text='Contact' page={`${process.env.NEXT_PUBLIC_BASE}/#contact-section`}  setOpen={setOpen} />
+				<MobileItem text='Showcase' page={`${process.env.NEXT_PUBLIC_BASE}showcase`}   setOpen={setOpen} />
+				<MobileItem text='Projects' page={`${process.env.NEXT_PUBLIC_BASE}projects`}   setOpen={setOpen} />
+				<MobileItem text='Contact' page={`${process.env.NEXT_PUBLIC_BASE}#contact-section`}  setOpen={setOpen} />
 
 
 				<Box sx={{
