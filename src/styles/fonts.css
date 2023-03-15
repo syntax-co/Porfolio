@@ -8,7 +8,7 @@
 
 @font-face {
 	font-family: satisfy;
-	src: url('../fonts/Satisfy/Satisfy-Regular.ttf');
+	src: url('../../fonts/Satisfy/Satisfy-Regular.ttf');
 }
 
 
@@ -25,7 +25,7 @@
 @font-face {
 	font-family: quicksand;
 	src: local(quicksand),
-	url('../fonts/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+	url('../../fonts/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
 }
 
 
@@ -41,7 +41,7 @@
 @font-face {
 	font-family: pt-sans;
 	src: local(pt-sans),
-	url('../fonts/PT_Sans/PTSans-Regular.ttf') format('truetype');
+	url('../../fonts/PT_Sans/PTSans-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -49,7 +49,7 @@
 @font-face {
 	font-family: pt-sans;
 	src: local(pt-sans),
-	url('../fonts/PT_Sans/PTSans-Bold.ttf') format('truetype');
+	url('../../fonts/PT_Sans/PTSans-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 }
@@ -57,7 +57,7 @@
 @font-face {
 	font-family: pt-sans;
 	src: local(pt-sans),
-	url('../fonts/PT_Sans/PTSans-BoldItalic.ttf') format('truetype');
+	url('../../fonts/PT_Sans/PTSans-BoldItalic.ttf') format('truetype');
 	font-weight: bold;
 	font-style: italic;
 }
@@ -67,7 +67,7 @@
 @font-face {
 	font-family: pt-sans;
 	src: local(pt-sans),
-	url('../fonts/PT_Sans/PTSans-Italic.ttf') format('truetype');
+	url('../../fonts/PT_Sans/PTSans-Italic.ttf') format('truetype');
 	font-weight: normal;
 	font-style: italic;
 }
@@ -81,7 +81,7 @@
 @font-face {
 	font-family: montserrat;
 	src: local(pt-sans),
-	url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+	url('../../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
