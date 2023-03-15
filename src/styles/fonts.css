@@ -81,7 +81,7 @@
 @font-face {
 	font-family: montserrat;
 	src: local(pt-sans),
-	url('../../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+	url('../../fonts/Montserrat/Montserrat-VariableFont_wght.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
