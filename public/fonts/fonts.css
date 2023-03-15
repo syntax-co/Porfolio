@@ -1,0 +1,105 @@
+:root {
+	--primary : #FFF8D3;
+	--bcolor: #141414;
+}
+
+
+
+
+@font-face {
+	font-family: satisfy;
+	src: url('./Satisfy/Satisfy-Regular.ttf');
+}
+
+
+/*
+ ██████  ██    ██ ██  ██████ ██   ██ ███████  █████  ███    ██ ██████
+██    ██ ██    ██ ██ ██      ██  ██  ██      ██   ██ ████   ██ ██   ██
+██    ██ ██    ██ ██ ██      █████   ███████ ███████ ██ ██  ██ ██   ██
+██ ▄▄ ██ ██    ██ ██ ██      ██  ██       ██ ██   ██ ██  ██ ██ ██   ██
+ ██████   ██████  ██  ██████ ██   ██ ███████ ██   ██ ██   ████ ██████
+    ▀▀
+*/
+
+
+@font-face {
+	font-family: quicksand;
+	src: local(quicksand),
+	url('./Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+}
+
+
+
+/*
+██████  ████████      ███████  █████  ███    ██ ███████
+██   ██    ██         ██      ██   ██ ████   ██ ██
+██████     ██         ███████ ███████ ██ ██  ██ ███████
+██         ██              ██ ██   ██ ██  ██ ██      ██
+██         ██ ███████ ███████ ██   ██ ██   ████ ███████
+*/
+
+@font-face {
+	font-family: pt-sans;
+	src: local(pt-sans),
+	url('./PT_Sans/PTSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: pt-sans;
+	src: local(pt-sans),
+	url('/PT_Sans/PTSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: pt-sans;
+	src: local(pt-sans),
+	url('/PT_Sans/PTSans-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+
+@font-face {
+	font-family: pt-sans;
+	src: local(pt-sans),
+	url('/PT_Sans/PTSans-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+
+
+
+/* C:\Users\muncr\Desktop\projects-v2\portfolio-v3\src\fonts\Montserrat */
+
+@font-face {
+	font-family: montserrat;
+	src: local(pt-sans),
+	url('/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

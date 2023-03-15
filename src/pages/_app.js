@@ -6,6 +6,7 @@ import { ThemeProvider } from '@mui/material/styles'
 
 import theme from '../themes/theme.js';
 import '../styles/navbar.css';
+import '../../public/fonts/fonts.css';
 
 
 export default function App({ Component, pageProps }) {
