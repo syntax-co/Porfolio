@@ -67,7 +67,7 @@
 @font-face {
 	font-family: pt-sans;
 	src: local(pt-sans),
-	url('/PT_Sans/PTSans-Italic.ttf') format('truetype');
+	url('./PT_Sans/PTSans-Italic.ttf') format('truetype');
 	font-weight: normal;
 	font-style: italic;
 }
@@ -81,7 +81,7 @@
 @font-face {
 	font-family: montserrat;
 	src: local(pt-sans),
-	url('/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+	url('./Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }

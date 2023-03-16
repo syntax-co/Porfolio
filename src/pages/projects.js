@@ -157,22 +157,32 @@ const Projects = () => {
             display:'flex',
             justifyContent:'center',
             alignItems:'center',
-            marginBottom:smallScreen? '100%':'10%'
+            marginBottom:smallScreen? '100%':'10%',
+            background:'url(./images/patterns-bottom.svg)'
         }}>
 
             <Box sx={{
                 width:smallScreen? '95%':'80%',
                 height:smallScreen? '95%':"80%",
-                justifyContent:'center',
-                display:'flex',
-                flexWrap:'wrap'
+                postion:'relative',
+                zIndex:1
             }}>
 
-                <ProjectItem smallScreen={smallScreen} projectName='ccc' />
-                <ProjectItem smallScreen={smallScreen} projectName='wsb' />
-                <ProjectItem smallScreen={smallScreen} projectName='portfolio' />
-                <ProjectItem smallScreen={smallScreen} projectName='signin-1' />
+                <Box sx={{
+                    width:'100%',
+                    height:'100%',
+                    justifyContent:'center',
+                    display:'flex',
+                    flexWrap:'wrap',
+                }}>
 
+                    <ProjectItem smallScreen={smallScreen} projectName='ccc' />
+                    <ProjectItem smallScreen={smallScreen} projectName='wsb' />
+                    <ProjectItem smallScreen={smallScreen} projectName='portfolio' />
+                    <ProjectItem smallScreen={smallScreen} projectName='signin-1' />
+                    <ProjectItem smallScreen={smallScreen} projectName='parallax-landing' />
+
+                </Box>
             </Box>
 
 

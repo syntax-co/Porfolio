@@ -19,6 +19,12 @@
         "title":"Signin/Registeration",
         "imagepath":"./images/signin-example-1.png",
         "sitepath":"https://syntax-co.github.io/signin_1/"
+    },
+    "parallax-landing":{
+        "title":"Parallax-landing",
+        "imagepath":"./images/parallax-landing-site.png",
+        "sitepath":"https://syntax-co.github.io/parallax-landing/"
     }
+
 
 }
