@@ -326,8 +326,8 @@ const Skill = ({text,delay}) => {
 
                 {/* headshot */}
                   <Box sx={{
-                    width:'calc(30px + 7vw)',
-                    height:'calc(30px + 7vw)',
+                    width:'calc(30px + 8vw)',
+                    height:'calc(30px + 8vw)',
                     position:'relative'
                   }}>
                     <Box
