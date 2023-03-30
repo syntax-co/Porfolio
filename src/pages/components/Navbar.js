@@ -300,7 +300,7 @@ const Navbar = () => {
 			}}>
 				
 				<div style={{
-						// fontFamily:'satisfy',
+						fontFamily:'satisfy',
 						color:'white',
 						fontSize:'1.5rem',
 						marginLeft:'15%',
