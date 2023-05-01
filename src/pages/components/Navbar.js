@@ -110,7 +110,8 @@ const MobileItem = ({page,text,setOpen}) => {
 				display:'flex',
 				justifyContent:'center',
 				marginTop:'8%',
-				marginBottom:'8%'
+				marginBottom:'8%',
+				fontFamily:'montserrat'
 			}}
 			onClick={(event) => {
 				setOpen(false);
