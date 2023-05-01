@@ -10,5 +10,9 @@
     "neumorphism":{
         "title":"Neurmorphism",
         "path":"showcases/MorphFinal"
+    },
+    "splineRocket":{
+        "title":"Rocket Model",
+        "path":"showcases/RocketSpline"
     }
 }
