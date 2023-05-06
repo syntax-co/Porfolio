@@ -14,5 +14,9 @@
     "splineRocket":{
         "title":"Rocket Model",
         "path":"showcases/RocketSpline"
+    },
+    "splinePlanet":{
+        "title":"Planet",
+        "path":"showcases/PlanetSpline"
     }
 }

@@ -118,6 +118,7 @@ const ShowcaseMenu = ({smallScreen}) => {
                 <MenuItem caseItem='gol' smallScreen={smallScreen} />
                 <MenuItem caseItem='neumorphism' smallScreen={smallScreen} />
                 <MenuItem caseItem='splineRocket' smallScreen={smallScreen} />
+                <MenuItem caseItem='splinePlanet' smallScreen={smallScreen} />
                 
             </Box>
         </Box>

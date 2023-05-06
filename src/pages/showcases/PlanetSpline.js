@@ -3,7 +3,7 @@ const { Box } = require("@mui/material")
 
 
 
-const RocketSpline = () => {
+const PlanetSpline = () => {
 
 
     return(
@@ -18,7 +18,7 @@ const RocketSpline = () => {
             
 
             <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.324/build/spline-viewer.js"></script>
-            <spline-viewer url="https://prod.spline.design/60i6WaA3f1x0L-c1/scene.splinecode"></spline-viewer>
+            <spline-viewer loading-anim url="https://prod.spline.design/sIVwRlZ1LkA0J-Dn/scene.splinecode"></spline-viewer>
 
 
         </Box>
@@ -27,4 +27,4 @@ const RocketSpline = () => {
 
 
 
-export default RocketSpline;
+export default PlanetSpline;
